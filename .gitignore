@@ -1,3 +1,5 @@
 build/
+# Bad Apple!! frames belong to their creators: generate locally with tools/badapple.py
+cyber_hairclip/src/effects/badapple_frames.h
 __pycache__/
 .DS_Store

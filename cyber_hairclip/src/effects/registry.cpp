@@ -6,6 +6,9 @@ const Effect EFFECTS[] = {
     {fxEye},      {fxMatrix},   {fxTesseract}, {fxWarp},  {fxRadar}, {fxBanner},
     {fxSynthwave}, {fxPulse},   {fxSpectrum},  {fxHelix}, {fxTerminal}, {fxCrack},
     {fxTor},      {fxHtop},     {fxLife},      {fxPanic}, {fxNeural},
+#if __has_include("badapple_frames.h")  // generated locally by tools/badapple.py
+    {fxBadApple, BADAPPLE_CHANCE},
+#endif
 };
 const int NUM_EFFECTS = sizeof(EFFECTS) / sizeof(EFFECTS[0]);
 static_assert(sizeof(EFFECTS) / sizeof(EFFECTS[0]) <= MAX_EFFECTS, "raise MAX_EFFECTS in effects.h");
